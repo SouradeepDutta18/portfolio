@@ -1,0 +1,42 @@
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    background-color: red;
+    top: 25px;
+    right:0px;
+    left:0px;
+    font-family: 'Roboto', sans-serif;
+}
+a.brand{
+   text-decoration: none;
+   color: black; 
+   font-size: 24px;
+   color: rgb(117, 26, 255);
+
+}
+.links{
+   flex: 0.6;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: black; 
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.links a:hover{
+    transform: scale(1.4);
+    color: rgb(117, 26, 255);
+
+    
+}
+
+.links li{
+    list-style: none;
+   
+}
