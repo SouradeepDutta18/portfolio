@@ -3,16 +3,28 @@
     justify-content: space-around;
     align-items: center;
     position: absolute;
-    background-color: red;
-    top: 25px;
+    /* background-color: red; */
+    top: 10px;
+    z-index: 100;
     right:0px;
     left:0px;
     font-family: 'Roboto', sans-serif;
 }
+.nav-controller{
+    display: none;
+}
+
+.nav-controller img{
+    height: 20px;
+    margin-right: 15px;
+   
+}
 a.brand{
    text-decoration: none;
-   color: black; 
+   color: white; 
    font-size: 24px;
+   font-weight: bold;
+   padding: 15px;
    color: rgb(117, 26, 255);
 
 }
@@ -24,13 +36,16 @@ a.brand{
 }
 .links a{
     text-decoration: none;
-    color: black; 
+    color: white; 
+    display: inline-block;
+    font-weight: bold;
     padding: 15px;
     cursor: pointer;
-    transition: 0.2s;
+   
 }
 .links a:hover{
-    transform: scale(1.4);
+    -webkit-transform: scale(1.1); /* Chrome, Safari, Opera */
+    transform: scale(1.1);
     color: rgb(117, 26, 255);
 
     
@@ -39,4 +54,109 @@ a.brand{
 .links li{
     list-style: none;
    
+}
+@media only screen and (max-width: 768px) {
+    .Navbar{
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: rgb(4, 4, 212);
+    }
+    .Navbar .wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(http://localhost:3000/wallpaper.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .nav-controller{
+        display: block;
+    }
+    .links{
+        display: flex;
+        width: 100%;
+        background: black;
+        /* color: white; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex: 0.6 0 90vh;
+        transition: display 1.5s ease-in-out;
+     }
+     a.brand{
+         color: white;
+         height: 10vh;
+         
+     }
+     .links a{
+         color: white;
+        
+     }
+    
+     .links a:hover{
+        -webkit-transform: scale(1.1); /* Chrome, Safari, Opera */
+        transform: scale(1.1);
+        color: greenyellow;
+    
+        
+    }
+    .visible{
+        display: flex;
+    }
+    .invisible{
+        display: none;
+    }
+   
+}
+@media only screen and (max-width: 480px){
+    .links{
+        display: flex;
+        width: 100%;
+        background: black;
+        /* color: white; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        flex: 0.6 0 90vh;
+        transition: display 1.5s ease-in-out;
+     }
+     .Navbar .wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(http://localhost:3000/wallpaper.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+     .nav-controller{
+        display: block;
+    }
+    a.brand{
+        font-size: medium;
+        height: 10vh;
+    }
+    .links a{
+        font-size: small;
+       
+
+
+    }
+    
+    .visible{
+        display: flex;
+    }
+    .invisible{
+        display: none;
+    }
+    
 }
