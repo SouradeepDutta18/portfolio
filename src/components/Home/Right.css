@@ -16,7 +16,8 @@
     /* background: goldenrod; */
 }
 .cv-img{
-    position: absolute;
+    position: absolute!important;
+    z-index: 2!important;
     width: 100% !important;
     height: 100% !important;
     background-color: goldenrod;

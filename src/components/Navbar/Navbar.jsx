@@ -1,15 +1,19 @@
+import { height } from '@mui/system';
 import React,{useState}from 'react'
 import "./Navbar.css"
 function Navbar() {
     const[isActive,setActive]=useState(false);
+    const[obj,setObj]=useState({home:true,spcl:false,portfolio:false,contact:false,hire:false})
     function handleOpen(){
+        document.body.style.overflow="hidden";
          setActive(true);
     }
     function handleClose(){
+        document.body.style.overflow="auto";
         setActive(false);
     }
     return (
-        <div className='Navbar'>
+        <div className='Navbar' style={{backgroundColor:isActive&&"black",height:isActive&&"100vh"}}>
           <div className='wrapper'>
             <a href='/' className='brand'>SOUMYAJIT</a>
              {
@@ -18,12 +22,11 @@ function Navbar() {
              }
             </div>
             <ul className={`links ${isActive?"visible":"invisible"}`}>
-               <li><a href="#">HOME</a></li>
-               <li><a href="#">SERVICES</a></li>
-               <li><a href="#">PORTFOLIO</a></li>
-               <li><a href="#">REVIEW</a></li>
-               <li><a href="#">CONTACT</a></li>
-               <li><a href="#">HIRE ME</a></li>
+               <li onClick={handleClose} ><a href="#home">HOME</a></li>
+               <li onClick={handleClose}><a href="#spcl">SERVICES</a></li>
+               <li onClick={handleClose}><a href="#portfolio">PORTFOLIO</a></li>
+               <li onClick={handleClose} ><a href="#hire">CONTACT</a></li>
+               <li onClick={handleClose} ><a href="#hire">HIRE</a></li>
             </ul>
         </div>
     )

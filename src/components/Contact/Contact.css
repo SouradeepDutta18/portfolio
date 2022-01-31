@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
 .Contact{
-    height: 100vh;
+    height: 50vh;
+    
     
 }
 .heading-wrapper{
@@ -23,7 +24,7 @@
     
 }
 .contact-header{
-    height: 50%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,6 +75,13 @@
         align-items: center;
         font-family: 'Montserrat', sans-serif;
     }
+    .Contact{
+        height: auto;
+    }
+    .contact-header{
+        height: 50vh;
+    }
+    
     .field{
         width: 100%;
     }

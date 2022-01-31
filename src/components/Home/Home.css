@@ -1,16 +1,41 @@
 .Home{
     height: 100vh;
     display: flex;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(http://localhost:3000/wallpaper.jpg);
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url(http://localhost:3000/wallpaper.jpg); */
+    /* background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),url( "/public/wallpaper.jpg"); */
+    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.65)),url( "/public/cubes.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+.Sidebar{
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+.Sidebar img{
+    height: 24px;
+    width: 24px;
+    margin-bottom: 40px;
+
+}
+
    
 @media only screen and (max-width: 768px) {
    .Home{
        flex-direction: column-reverse;
-       height: 90vh;
+       height: 100vh;
       
    }
+   .Sidebar{
+       right:15px ;
+   }
+ 
 }

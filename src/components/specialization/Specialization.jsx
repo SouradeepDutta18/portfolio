@@ -49,7 +49,7 @@ function Specialization() {
 
     ]
     return (
-        <div className='Specialization'>
+        <div className='Specialization' id="spcl">
             <div className='sp-intro'>Specialized in</div>
             <div className='sp-items'>
             {
