@@ -17,7 +17,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 .heading-wrapper h5{
-    font-size: medium;
+    font-size: larger;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     
@@ -28,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f7363f;
+    background-color: royalblue;
 }
 .contact-body{
     height: 50%;
