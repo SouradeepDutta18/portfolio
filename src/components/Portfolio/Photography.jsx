@@ -13,7 +13,7 @@ function Photography({pactive}) {
    {dest:"image-grid/North-kolkata.jpg"}
   ]
  
-  return <div className='photography'>
+  return <div className='photography'  data-aos="fade-left">
   
      {
        photos.map((photo,key)=>{

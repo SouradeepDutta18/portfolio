@@ -22,9 +22,9 @@ function Portfolio() {
     setPactive(false);
     setOtheractive(true);
   }
-  return <div className='Portfolio' id='portfolio'>
+  return <div className='Portfolio' id='portfolio' data-aos="fade-in">
   <div className='p-heading'>
-  <h1>My Works</h1>
+  <h1>MY WORKS</h1>
   </div>
   <div className='p-options'>
   
@@ -33,7 +33,7 @@ function Portfolio() {
   <p className={`${otheractive&&"active"}`} onClick={ohandler}>Others</p>
   
   </div>
-  <div className='portfolio-items' >
+  <div className='portfolio-items'  >
   {
     wactive?<WebDesign wactive={wactive}/>:null
   }

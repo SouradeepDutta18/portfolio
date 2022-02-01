@@ -5,7 +5,7 @@ function Right() {
     return (
         <div className='Right'>
         <div className='right-wrapper'>
-           <Avatar alt="CV Image" src="dada.png" className='cv-img' />
+           <Avatar alt="CV Image" src="Sd2.png" className='cv-img' />
                                   
            </div>
         </div>

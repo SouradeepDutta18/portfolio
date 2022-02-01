@@ -1,7 +1,7 @@
 import React from 'react';
 
 function WebDesign({wactive}) {
-  return <div className='WebDesign'>
+  return <div className='WebDesign' data-aos="fade-right">
   <div className='webitem'>
      <img src="youtube page.JPG" alt=""/>
      <div className='detail'>

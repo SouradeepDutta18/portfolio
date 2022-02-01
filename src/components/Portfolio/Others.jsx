@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Others({otheractive}) {
-  return <div className='others'>
+  return <div className='others'  data-aos="fade-left">
   <div className='oitem'>
   <img src="ml.jpg" alt=""/>
   <div className='detail'>

@@ -29,7 +29,7 @@ function Hire() {
 
        
  }
-  return <div className="Hire" id='hire'>
+  return <div className="Hire" id='hire' >
     <div className='Hire-left'>
       <div className='left-top'>
       <h1 className='heading'>Let's Talk</h1>

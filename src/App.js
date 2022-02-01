@@ -5,6 +5,13 @@ import Contact from './components/Contact/Contact';
 import Specialization from './components/specialization/Specialization';
 import Hire from './components/Hire/Hire';
 import Portfolio from './components/Portfolio/Portfolio';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init({
+  offset: 300,
+  duration: 1900
+});
 
 function App() {
   return (

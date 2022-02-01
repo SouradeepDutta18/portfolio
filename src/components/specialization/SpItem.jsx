@@ -2,7 +2,7 @@ import React from 'react'
 
 function SpItem({title,image,desc}) {
     return (
-        <div className='SpItem'>
+        <div className='SpItem' data-aos="flip-left">
         
             <div className='SpItem-Container'>
               <img src={image} alt=""/>
