@@ -15,6 +15,7 @@ function Left() {
             <div className='item'>Video Editor</div>
             </div>
             </div>
+            
             </div>
         </div>
     )
