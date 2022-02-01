@@ -22,7 +22,7 @@ function Portfolio() {
     setPactive(false);
     setOtheractive(true);
   }
-  return <div className='Portfolio' id='portfolio' data-aos="fade-in">
+  return <div className='Portfolio' id='portfolio' data-aos="fade-in" style={{overflowX:"hidden"}}>
   <div className='p-heading'>
   <h1>MY WORKS</h1>
   </div>

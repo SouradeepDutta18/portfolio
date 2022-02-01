@@ -16,14 +16,14 @@ AOS.init({
 function App() {
   return (
     
-    <>
+    <div className='App' style={{overflowX:"hidden"}}>
     <Navbar />
     <Home />
     <Specialization/>
     <Portfolio/>
     <Contact/>
     <Hire/>
-    </>
+    </div>
     );
   
 }

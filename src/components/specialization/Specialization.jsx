@@ -49,12 +49,12 @@ function Specialization() {
 
     ]
     return (
-        <div className='Specialization' id="spcl" data-aos="fade-in">
+        <div className='Specialization' id="spcl" data-aos="fade-in" style={{overflowX:"hidden"}}>
             <div className='sp-intro'>Specialized in</div>
             <div className='sp-items'>
             {
                 sp_items.map((item,key)=>{
-                    return <SpItem title={item.title} image={item.image} desc={item.desc} key={key} data-aos="flip-left"/>
+                    return <SpItem title={item.title} image={item.image} desc={item.desc} key={key} />
                 })
             }
            
